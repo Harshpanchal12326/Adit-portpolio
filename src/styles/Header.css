@@ -1,0 +1,80 @@
+.header {
+  padding: 4rem 2rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+  animation: fadeIn 0.6s ease-out;
+}
+
+.header-content {
+  max-width: 900px;
+  margin: 0 auto 2rem;
+}
+
+.name-section {
+  margin-bottom: 1.5rem;
+}
+
+.name {
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.title {
+  font-size: 1.25rem;
+  color: var(--secondary-color);
+  margin: 0.5rem 0 0 0;
+  font-weight: 500;
+}
+
+.bio {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin: 1.5rem auto 0;
+  line-height: 1.6;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.contact-info a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 2rem 1rem;
+  }
+
+  .contact-info {
+    gap: 1rem;
+    font-size: 0.85rem;
+  }
+}

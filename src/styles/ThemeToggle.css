@@ -1,0 +1,40 @@
+.theme-toggle {
+  display: flex;
+  gap: 0.5rem;
+  background: var(--control-background);
+  border-radius: 8px;
+  padding: 0.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.toggle-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  opacity: 0.6;
+}
+
+.toggle-btn:hover {
+  opacity: 0.9;
+  background: var(--hover-background);
+}
+
+.toggle-btn.active {
+  background: var(--accent-color);
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .theme-toggle {
+    padding: 0.4rem;
+  }
+
+  .toggle-btn {
+    padding: 0.4rem 0.6rem;
+    font-size: 1.2rem;
+  }
+}
